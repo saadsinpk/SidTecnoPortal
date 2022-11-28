@@ -1446,7 +1446,7 @@ mark,
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "â€”Â ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -11552,7 +11552,7 @@ h6 a {
 .dropify-wrapper.has-error .dropify-message .dropify-error {
   display: block;
 }
-.dropify-wrapper.has-error:hover .dropify-errors-containerÂ  {
+.dropify-wrapper.has-error:hover .dropify-errors-container  {
   visibility: visible;
   opacity: 1;
   transition-delay: 0s;
@@ -13557,7 +13557,7 @@ select.selectpicker {
   display: inline;
 }
 .bootstrap-select.fit-width .dropdown-toggle .bs-caret:before {
-  content: "Â ";
+  content: " ";
 }
 .bootstrap-select.fit-width .dropdown-toggle .caret {
   position: static;
@@ -13676,7 +13676,7 @@ select.selectpicker {
   line-height: 1em;
 }
 .flag-icon:before {
-  content: "Â ";
+  content: " ";
 }
 .flag-icon.flag-icon-squared {
   width: 1em;
@@ -20259,3 +20259,305 @@ body.dark-theme .card-body::-webkit-scrollbar-thumb {
 }
 
 /*# sourceMappingURL=main.css.map*/
+
+
+
+              .loginsection {
+            width: 80%;
+            margin: 20px auto ;
+            box-shadow: 0 0 10px #000;
+        }
+        .loginsection .row {
+           
+        }
+.loginsection__left .bac {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.loginsection__right {
+    padding: 40px 60px;
+}
+.loginsection__right-img1 img {
+    margin: 0 auto;
+    max-width: 90px;
+}
+.loginsection__right-img2,
+.loginsection__right-img1 {
+    text-align: center;
+}
+
+.loginsection__right-img2 img {
+    max-width: 180px;
+    margin: 20px auto;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.inputBox {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.inputBox i,.inputBox svg {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a61c20;
+    z-index: 9;
+}
+.inputBox svg path {
+    fill: #a61c20;
+}
+.inputBox input {
+    padding: 10px 0;
+    border-radius: 30px;
+    padding-left: 45px;
+    background: #d1d2d3;
+}
+ul.social__icon.list a {
+    width: 25px;
+    height: 25px;
+    background: #a61c20;
+    border-radius: 50%;
+    display: block;
+    color: #fff;
+    font-size: 10px;
+    display: grid;
+    place-items: center;
+    transition: .3s;
+}
+ul.social__icon.list a:hover {
+    transform: rotate(360deg);
+    color: #fff;
+}
+
+ul.social__icon {
+    gap: 4px;
+}
+
+.loginsection__right--footer {
+    gap: 10px;
+}
+
+.loginsection__right--footer span {
+    color: #a61c20;
+}
+.forget a {
+    color: #000;
+}
+button.sidformbtn {
+    width: 90%;
+    background: linear-gradient(45deg, #a61c20, #c73136fa);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 30px;
+    margin: 10px auto;
+    display: block;
+    transition: .3s;
+    padding: 10px;
+    border: 1px solid #a61c20;
+}
+button.sidformbtn:hover {
+    background: #fff;
+    color: #a61c20;
+}
+a:hover {
+    text-decoration: none;
+}
+a.sidformbtn2 {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #af2327;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    color: #af2227;
+    border-radius: 30px;
+}
+.sidformbtn2:hover {
+    background: #af2227;
+    color: #fff !important;
+}
+input#checkbox-signup {
+    margin-right: 8px;
+}
+.loginsection__left {
+    position: relative;
+    overflow: hidden;
+}
+.rocket {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+    animation: rocket 10s infinite cubic-bezier(0.59, -0.04, 0, 0.13);
+}
+@keyframes rocket {
+  0% {top: 110%;}
+  10% {top: 60%;}
+  20% {top: 60%;}
+  30% {top: 60%;}
+  100% {top: -40%;}
+
+}
+.side1 {
+    position: absolute;
+    left: 8%;
+    margin: 0 auto;
+    z-index: 1;
+    top: 81%;
+    z-index: 2;
+    animation: side1 3s infinite cubic-bezier(0.59, -0.04, 0, 0.13);
+}
+.side2 {
+    position: absolute;
+    right: 16%;
+    margin: 0 auto;
+    z-index: 1;
+    top: 20%;
+    z-index: 2;
+    animation: side2 5s infinite cubic-bezier(0.59, -0.04, 0, 0.13);
+}
+.side3 {
+    position: absolute;
+    right: 8%;
+    margin: 0 auto;
+    z-index: 1;
+    top: 81%;
+    z-index: 2;
+    animation: side3 7s infinite cubic-bezier(0.59, -0.04, 0, 0.13);
+}
+.siderain {
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+    top: 81%;
+    z-index: 1;
+        opacity: 0.6;
+    animation: rain 5s infinite cubic-bezier(0.59, -0.04, 0, 0.13);
+}
+.siderain2 {
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+    top: 21%;
+    z-index: 1;
+    opacity: 0.6;
+    animation: rain2 10s infinite cubic-bezier(0.59, -0.04, 0, 0.13);
+}
+.siderain3 {
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+    top: 81%;
+    z-index: 1;
+        opacity: 0.6;
+    animation: rain3 15s infinite cubic-bezier(0.59, -0.04, 0, 0.13);
+}
+.siderain4 {
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+    top: 81%;
+    z-index: 1;
+        opacity: 0.6;
+    animation: rain4 20s infinite cubic-bezier(0.59, -0.04, 0, 0.13);
+}
+.siderain5 {
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+    top: 81%;
+    z-index: 1;
+        opacity: 0.6;
+    animation: rain5 25s infinite cubic-bezier(0.59, -0.04, 0, 0.13);
+}
+@keyframes side1 {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(15px);}
+  100% {transform: translateY(0px);}
+
+}
+@keyframes side2 {
+    0% {transform: translateY(0px);}
+  50% {transform: translateY(-45px);}
+  100% {transform: translateY(0px);}
+}
+@keyframes side3 {
+    0% {transform: translateY(0px);}
+  50% {transform: translateY(55px);}
+  100% {transform: translateY(0px);}
+
+}
+@keyframes rain {
+    0% {
+        right: -50%;
+        top: -110%;
+    }
+100% {
+    right: 150%;
+    top:130%;
+}
+
+}
+@keyframes rain2 {
+    0% {
+        right: -40%;
+        top: -100%;
+    }
+100% {
+    right: 140%;
+    top:140%;
+}
+
+}
+@keyframes rain3 {
+    0% {
+        right: -30%;
+        top: 0%;
+    }
+100% {
+    right: 130%;
+    top:130%;
+}
+
+}
+@keyframes rain4 {
+    0% {
+        right: -40%;
+        top: -70%;
+    }
+100% {
+    right: 140%;
+    top:140%;
+}
+
+}
+@keyframes rain5 {
+    0% {
+        right: -40%;
+        top: 00%;
+    }
+100% {
+    right: 160%;
+    top:200%;
+}
+
+}
+@media only screen and (max-width: 979px) {
+    .loginsection {
+    width: 96%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .loginsection__left {
+        display: none;
+    }
+}

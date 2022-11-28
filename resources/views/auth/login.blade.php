@@ -1,12 +1,28 @@
 <x-auth>
+    <section class="loginsection">
+        <div class="row">
+          <div class="col-md-6 loginsection__left p-0">
+              <img src="img/bax.png" class="bac" alt="">
+              <img src="img/sidrocket.png" class="rocket" alt="">
+              <img src="img/side1.png" class="side1" alt="">
+              <img src="img/side2.png" class="side2" alt="">
+              <img src="img/side3.png" class="side3" alt="">
+              <img src="img/f1.png" class="siderain" alt="">
+              <img src="img/f2.png" class="siderain2" alt="">
+              <img src="img/f3.png" class="siderain3" alt="">
+              <img src="img/f4.png" class="siderain4" alt="">
+              <img src="img/f5.png" class="siderain5" alt="">
+          </div>
+          <div class="col-md-6 loginsection__right">
+              <div class="loginsection__right-img1">
+                  <img src="img/sid1.png" alt="">
+              </div>
+              <div class="loginsection__right-img2">
+                  <img src="img/sidlogo.png" alt="">
+              </div>
+              <p class="text-center">Welcome to the sid Techno</p>
     <form id="login-form" action="{{ route('login') }}" class="ajax-form" method="POST">
         {{ csrf_field() }}
-        <section class="bg-grey py-5 login_section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="login_box mx-auto rounded bg-white text-center">
-                            <h3 class="text-capitalize mb-4 f-w-500">@lang('app.login')</h3>
 
                             @if ($errors->any())
                                 <div class="alert alert-danger">
@@ -60,15 +76,14 @@
                             @if ($socialAuthSettings->social_auth_enable)
                                 <p class="position-relative my-4">@lang('auth.useEmail')</p>
                             @endif
-
-                            <div class="form-group text-left">
-                                <label for="email">@lang('auth.email')</label>
-                                <input tabindex="1" type="email" name="email"
-                                       class="form-control height-50 f-15 light_text" autofocus
-                                       placeholder="@lang('auth.email')" id="email">
+                            <div class="inputBox">
+                                <i class="fa fa-user"></i>
+                                <input  tabindex="1" type="email" name="email"
+                                class="form-control" autofocus
+                                placeholder="@lang('auth.email')" id="email">
                                 <input type="hidden" id="g_recaptcha" name="g_recaptcha">
                             </div>
-
+                        
                             @if ($socialAuthSettings->social_auth_enable)
                                 <button type="submit" id="submit-next"
                                         class="btn-primary f-w-500 rounded w-100 height-50 f-18 ">@lang('auth.next') <i
@@ -77,28 +92,30 @@
 
                             <div id="password-section"
                                  @if ($socialAuthSettings->social_auth_enable) class="d-none" @endif>
-                                <div class="form-group text-left">
-                                    <label for="password">@lang('app.password')</label>
+                                 <div class="inputBox">
+                                    <i class="fa fa-lock"></i>
                                     <x-forms.input-group>
                                         <input type="password" name="password" id="password"
                                             placeholder="@lang('placeholders.password')" tabindex="3"
-                                            class="form-control height-50 f-15 light_text">
-                                        <x-slot name="append">
+                                            class="form-control">
+                                        {{-- <x-slot name="append">
                                             <button type="button" data-toggle="tooltip"
                                                 data-original-title="@lang('app.viewPassword')"
                                                 class="btn btn-outline-secondary border-grey height-50 toggle-password"><i
                                                     class="fa fa-eye"></i></button>
-                                        </x-slot>
+                                        </x-slot> --}}
                                     </x-forms.input-group>
                                 </div>
-                                <div class="forgot_pswd mb-3">
-                                    <a href="{{ url('forgot-password') }}">@lang('app.forgotPassword')</a>
-                                </div>
-
-                                <div class="form-group text-left">
-                                    <input id="checkbox-signup" type="checkbox" name="remember">
-                                    <label for="checkbox-signup">@lang('app.rememberMe')</label>
-                                </div>
+                            </div>
+                            <ul class="list d-flex justify-content-between">
+                                <li>
+                                    <label for="checkbox-signup" class="remember">  <input id="checkbox-signup" type="checkbox" name="remember"><span>@lang('app.rememberMe')</span></label>
+                                </li>
+                                <li>
+                                    <label class="forget"> <a href="{{ url('forgot-password') }}">@lang('app.forgotPassword')</a></label>
+                                </li>
+                            </ul>
+                              
 
                                 @if ($setting->google_recaptcha_status == 'active' && $setting->google_recaptcha_v2_status == 'active')
                                     <div class="form-group" id="captcha_container"></div>
@@ -110,26 +127,30 @@
                                 @endif
 
                                 <button type="submit" id="submit-login"
-                                        class="btn-primary f-w-500 rounded w-100 height-50 f-18">
-                                    @lang('app.login') <i class="fa fa-arrow-right pl-1"></i>
+                                        class="sidformbtn btn">
+                                    @lang('app.login') 
                                 </button>
 
                                 @if ($setting->allow_client_signup)
                                     <a href="{{ route('register') }}"
-                                       class="btn-secondary f-w-500 rounded w-100 height-50 f-15 mt-3">
+                                       class="sidformbtn2   my-2 text-center">
                                         @lang('app.signUpAsClient')
                                     </a>
                                 @endif
-
+                                <div class="loginsection__right--footer d-flex justify-content-center align-items-center mt-2">
+                                    <ul class="social__icon list d-flex ">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                    <span>/sidtechnocom</span>
+                                </div>
+                            </form>
                             </div>
-
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </section>
-    </form>
+ 
 
     <x-slot name="scripts">
 

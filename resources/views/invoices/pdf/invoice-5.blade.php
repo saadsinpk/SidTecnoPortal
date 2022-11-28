@@ -631,16 +631,16 @@ margin:0;
 <body class="">
     <div class="invoices">
     <div class="watermark">
-      <img src="http://phpstack-539799-2783116.cloudwaysapps.com/invoice/webImages/watermark.png" class="" alt="">
+      <img src="{{asset('images/invoice/watermark.png')}}" class="" alt="">
     </div>
     <header class="header">
       <div class="header_img" style="position: absolute; top:0;">
-        <img src="http://phpstack-539799-2783116.cloudwaysapps.com/invoice/webImages/5.png" style="width: 100%;" alt="">
+        <img src="{{asset('images/invoice/5.png')}}" style="width: 100%;" alt="">
       </div>
       
       <div class="header__left" style="padding-top: 5rem;">
         <div class="logo">
-          <a href="#"><img src="http://phpstack-539799-2783116.cloudwaysapps.com/invoice/webImages/logo.png" alt=""></a>
+          <a href="#"><img src="{{asset('images/invoice/logo.png')}}" alt=""></a>
         </div>
         <div class="header__left-box">
           <ul class="list">
@@ -880,22 +880,22 @@ margin:0;
 ">
       <div class="footer_img">
         <div class="header_img">
-          <img src="http://phpstack-539799-2783116.cloudwaysapps.com/invoice/webImages/6.png" style="width: 100%;" alt="">
+          <img src="{{asset('images/invoice/6.png')}}" style="width: 100%;" alt="">
         </div>
       </div>
       <!-- <div class="footer__left">
-        <img src="http://phpstack-539799-2783116.cloudwaysapps.com/invoice/webImages/4.png" alt="">
+        <img src="{{asset('images/invoice/4.png')}}" alt="">
       </div>
       <div class="footer__right">
         <div class="footer__right_"></div>
         <ul class="list contactus flex_ align_center">
-          <li class="flex_ align_center"><div class="contactus__img"><img src="http://phpstack-539799-2783116.cloudwaysapps.com/invoice/webImages/telephone.png" alt=""></div> <a href="#">+92-213-2311354</a></li>
-          <li class="flex_ align_center"><div class="contactus__img"><img src="http://phpstack-539799-2783116.cloudwaysapps.com/invoice/webImages/envelope.png" alt=""></div> <a href="#">info@sidtechno.com</a></li>
+          <li class="flex_ align_center"><div class="contactus__img"><img src="{{asset('images/invoice/telephone.png')}}" alt=""></div> <a href="#">+92-213-2311354</a></li>
+          <li class="flex_ align_center"><div class="contactus__img"><img src="{{asset('images/invoice/envelope.png')}}" alt=""></div> <a href="#">info@sidtechno.com</a></li>
          
         </ul>
         <ul class="list contactus">
-          <li class="flex_ align_center"><div class="contactus__img"><img src="http://phpstack-539799-2783116.cloudwaysapps.com/invoice/webImages/home.png" alt=""></div> <p href="#">Office#405 Custom Trade Tower KPT, Kharadar, Karachi.</p></li>
-          <li class="flex_ align_center"><div class="contactus__img"><img src="http://phpstack-539799-2783116.cloudwaysapps.com/invoice/webImages/globe.png" alt=""></div> <a href="#">www.sidetechno.com</a></li>
+          <li class="flex_ align_center"><div class="contactus__img"><img src="{{asset('images/invoice/home.png')}}" alt=""></div> <p href="#">Office#405 Custom Trade Tower KPT, Kharadar, Karachi.</p></li>
+          <li class="flex_ align_center"><div class="contactus__img"><img src="{{asset('images/invoice/globe.png')}}" alt=""></div> <a href="#">www.sidetechno.com</a></li>
         </ul>
       </div> -->
       <div class="footer__right" style="
@@ -905,11 +905,11 @@ margin:0;
     bottom: -9px;">
         <div class="footer__right_"></div>
         <ul class="list contactus flex_ align_center">
-          <li class="flex_ align_center"><div class="contactus__img"><img src="http://phpstack-539799-2783116.cloudwaysapps.com/invoice/webImages/telephone.png" alt=""></div> <a href="#">+92-213-2311354</a></li>
-          <li class="flex_ align_center"><div class="contactus__img"><img src="http://phpstack-539799-2783116.cloudwaysapps.com/invoice/webImages/envelope.png" alt=""></div> <a href="#">info@sidtechno.com</a></li>
+          <li class="flex_ align_center"><div class="contactus__img"><img src="{{asset('images/invoice/telephone.png')}}" alt=""></div> <a href="#">+92-213-2311354</a></li>
+          <li class="flex_ align_center"><div class="contactus__img"><img src="{{asset('images/invoice/envelope.png')}}" alt=""></div> <a href="#">info@sidtechno.com</a></li>
          
-          <li class="flex_ align_center"><div class="contactus__img"><img src="http://phpstack-539799-2783116.cloudwaysapps.com/invoice/webImages/home.png" alt=""></div> <p href="#">Office#405 Custom Trade Tower KPT, Kharadar, Karachi.</p></li>
-          <li class="flex_ align_center"><div class="contactus__img"><img src="http://phpstack-539799-2783116.cloudwaysapps.com/invoice/webImages/globe.png" alt=""></div> <a href="#">www.sidetechno.com</a></li>
+          <li class="flex_ align_center"><div class="contactus__img"><img src="{{asset('images/invoice/home.png')}}" alt=""></div> <p href="#">Office#405 Custom Trade Tower KPT, Kharadar, Karachi.</p></li>
+          <li class="flex_ align_center"><div class="contactus__img"><img src="{{asset('images/invoice/globe.png')}}" alt=""></div> <a href="#">www.sidetechno.com</a></li>
         </ul>
       </div> 
     </footer>

@@ -1,51 +1,75 @@
 <x-auth>
+    <section class="loginsection">
+        <div class="row">
+          <div class="col-md-6 loginsection__left p-0">
+              <img src="img/bax.png" class="bac" alt="">
+              <img src="img/sidrocket.png" class="rocket" alt="">
+              <img src="img/side1.png" class="side1" alt="">
+              <img src="img/side2.png" class="side2" alt="">
+              <img src="img/side3.png" class="side3" alt="">
+              <img src="img/f1.png" class="siderain" alt="">
+              <img src="img/f2.png" class="siderain2" alt="">
+              <img src="img/f3.png" class="siderain3" alt="">
+              <img src="img/f4.png" class="siderain4" alt="">
+              <img src="img/f5.png" class="siderain5" alt="">
+          </div>
+          <div class="col-md-6 loginsection__right">
+              <div class="loginsection__right-img1">
+                  <img src="img/sid1.png" alt="">
+              </div>
+              <div class="loginsection__right-img2">
+                  <img src="img/sidlogo.png" alt="">
+              </div>
+              <p class="text-center">@lang('app.resetPassword')</p>
     <form id="reset-password-form" action="{{ route('password.update') }}" class="ajax-form" method="POST">
         {{ csrf_field() }}
-        <section class="bg-grey py-5 login_section">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-12 text-center">
-                        <div class="login_box mx-auto rounded bg-white text-center">
-
-                            <h3 class="text-capitalize mb-4 f-w-500">@lang('app.resetPassword')</h3>
+    
 
                             <div class="alert alert-success m-t-10 d-none" id="success-msg"></div>
 
                             <input type="hidden" name="token" value="{{ $request->route('token') }}">
                             <input type="hidden" name="email" value="{{ $request->email }}">
 
-                            <div class="form-group text-left">
-                                <label for="password">@lang('app.password')</label>
+                            <div class="inputBox">
+                                <i class="fa fa-lock"></i>
 
                                 <input type="password" name="password"
-                                    class="form-control height-50 f-15 light_text" placeholder="Password"
+                                    class="form-control" placeholder="Password"
                                     id="password">
                             </div>
 
-                            <div class="form-group text-left">
-                                <label for="password">@lang('app.confirmPassword')</label>
+                            <div class="inputBox">
+                                <i class="fa fa-lock"></i>
                                 <input type="password" name="password_confirmation"
-                                    class="form-control height-50 f-15 light_text" placeholder="Confirm Password"
+                                    class="form-control" placeholder="Confirm Password"
                                     id="password_confirmation">
                             </div>
 
                             <button
                                 type="submit"
                                 id="submit-login"
-                                class="btn-primary f-w-500 rounded w-100 height-50 f-18">
-                                @lang('app.resetPassword') <i class="fa fa-arrow-right pl-1"></i>
+                                class="sidformbtn btn">
+                                @lang('app.resetPassword') 
                             </button>
-
+                            <div class="my-3">
+                                <a href="{{ route('login') }}" class="sidformbtn2  text-center">@lang('app.login')</a>
+                            </div>
+                            <div class="loginsection__right--footer d-flex justify-content-center align-items-center mt-2">
+                                <ul class="social__icon list d-flex ">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                </ul>
+                                <span>/sidtechnocom</span>
+                            </div>
+                        </form>
                         </div>
-                        <div class="forgot_pswd mt-3">
-                            <a href="{{ route('login') }}">@lang('app.login')</a>
-                        </div>
+                      
                     </div>
-                </div>
-            </div>
+                
         </section>
-    </form>
+
 
     <x-slot name="scripts">
         <script>
